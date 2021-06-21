@@ -19,7 +19,7 @@ body{
   background-color: #fff;
 }
 .header{
-  padding-top: 20px;
+  padding: 25px 0;
 }
 .logo,
 .logo p,
@@ -35,7 +35,6 @@ body{
 .logo p,
 .contact-info a{
   margin: 0;
-  padding-bottom: 20px;
   font-size: 22px;
   color: #39930d;
   text-decoration: none;
@@ -65,6 +64,9 @@ body{
 .contact-info i{
   display: block;
   text-align: right;
+}
+.contact-info a{
+  padding-bottom: 10px;
 }
 .image{
   width: 100%;
