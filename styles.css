@@ -1,0 +1,116 @@
+html{
+  font-size: 14px;
+}
+body{
+  margin: 0;
+  background-color: #8dc63f;
+  font-family: "Arial";
+}
+.clear:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.wrapper{
+  margin: 0 auto;
+  padding: 0 18px;
+  max-width: 960px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.header{
+  padding-top: 10px;
+}
+.logo,
+.logo p,
+.logo img{
+  float: left;
+}
+.logo img{
+  transition: all 1s ease;
+}
+.logo img:hover{
+  padding-left: 300px;
+}
+.logo p,
+.contact-info a{
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #39930d;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo b{
+  display: block;
+  margin-right: 35px;
+  font-size: 44px;
+}
+.logo i,
+.contact-info i{
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.main{
+  padding-bottom: 45px;
+}
+.scope{
+  float: left;
+  max-width: 600px;
+}
+.contact-info{
+  float: right;
+}
+.contact-info i{
+  display: block;
+  text-align: right;
+}
+.image{
+  width: 100%;
+}
+.scope h1{
+  font-size: 24px;
+  color: #39930d;
+}
+.scope p{
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #343434;
+}
+.menu{
+  float: right;
+  width: 300px;
+}
+.menu p{
+  padding: 15px 20px 10px;
+}
+.menu p,
+.copyright{
+  color: #fff;
+  background-color: #39930d;
+  font: 18px "Arial";
+}
+.menu ul{
+  list-style: none;
+  padding: 0 20px;
+}
+.menu a{
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  color: #39930d;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+.menu a:hover{
+  padding-left: 20px;
+  background-color: rgba(52, 52, 52, 0.5);
+  text-decoration: none;
+  color: #fff;
+}
+.copyright{
+  margin: 0 -15px;
+  padding: 15px;
+  font-size: 14px;
+}
