@@ -1,5 +1,5 @@
 html{
-  font-size: 14px;
+  font-size: 10px;
 }
 body{
   margin: 0;
@@ -20,11 +20,11 @@ body{
 }
 .header{
   padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
 }
-.logo,
-.logo p,
-.logo img{
-  float: left;
+.logo{
+  display: flex;
 }
 .logo img{
   transition: all 1s ease;
@@ -35,7 +35,7 @@ body{
 .logo p,
 .contact-info a{
   margin: 0;
-  font-size: 22px;
+  font-size: 2.2rem;
   color: #39930d;
   text-decoration: none;
   display: inline-block;
@@ -44,22 +44,20 @@ body{
 .logo b{
   display: block;
   margin-right: 35px;
-  font-size: 44px;
+  font-size: 4.4rem;
 }
 .logo i,
 .contact-info i{
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #5a5a5a;
 }
 .main{
   padding-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
 }
 .scope{
-  float: left;
   max-width: 600px;
-}
-.contact-info{
-  float: right;
 }
 .contact-info i{
   display: block;
@@ -72,16 +70,15 @@ body{
   width: 100%;
 }
 .scope h1{
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #39930d;
 }
 .scope p{
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.5em;
   color: #343434;
 }
 .menu{
-  float: right;
   width: 300px;
 }
 .menu p{
@@ -91,7 +88,7 @@ body{
 .copyright{
   color: #fff;
   background-color: #39930d;
-  font: 18px "Arial";
+  font: 1.8rem "Arial";
 }
 .menu ul{
   list-style: none;
@@ -99,7 +96,7 @@ body{
 }
 .menu a{
   display: block;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 30px;
   color: #39930d;
   text-transform: uppercase;
@@ -116,3 +113,49 @@ body{
   padding: 15px;
   font-size: 14px;
 }
+@media screen and (max-width: 932px){
+  .scope{
+    max-width: 100%;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .menu{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px){
+   .header{
+    flex-direction: column; 
+    align-items: center;
+   }
+   .logo{
+     margin-bottom: 20px;
+   }
+   .contact-info i{
+     text-align: center;
+   }
+   .image{
+     min-height: 200px;
+     object-fit: cover;
+     object-position: 75% center;
+   }
+  }
+   @media screen and (max-width: 390px){
+     .logo{
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+     }
+     .logo p{
+      margin-bottom: 12px;
+     }
+     .logo b{
+       margin: 0;
+     }
+   }
+   @media screen and (max-width: 285px){
+     html {
+       font-size: 6px;
+     }
+   }
